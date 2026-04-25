@@ -1,11 +1,11 @@
 import styles from './VoteStats.module.css';
 import type { Votes } from '../../types/votes';
 
-type VoteStatsProps = {
+interface VoteStatsProps {
   votes: Votes;
   totalVotes: number;
   positiveRate: number;
-};
+}
 
 function VoteStats({
   votes: { good, neutral, bad },
